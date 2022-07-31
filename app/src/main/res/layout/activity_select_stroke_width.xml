@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectStrokeWidth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/strokeWidth1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Width 1"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/strokeWidth2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Width 2"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/strokeWidth4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Width 4"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/strokeWidth8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Width 8"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/doneButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onDoneButtonClicked"
+                android:text="Done" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onCancelButtonClicked"
+                android:text="Cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
